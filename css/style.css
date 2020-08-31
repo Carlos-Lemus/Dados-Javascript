@@ -63,7 +63,7 @@ h1, h3 {
 
 .dados {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: space-around;
     align-items: center;
     flex-wrap: wrap;
