@@ -1,0 +1,131 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: #2E4058;
+}
+
+.contenedor-all {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: 'Lobster', Helvetica, sans-serif;
+    letter-spacing: 3px;
+    margin: 20px  0;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.75);
+}
+
+.text-red {
+    color: #EA5455;
+}
+
+.yellow {
+    background-color: #DAA520;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-shrink: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedor {
+        width: 70%;
+    }
+}
+
+.contenedor-dado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 0 1 calc(35% - 4em);
+} 
+
+.dados {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+
+    height: 50px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+}
+
+
+@media only screen and (min-width: 480px) {
+    .dados {
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .dados {
+        height: 150px;
+    }
+}
+
+.punto {
+    height: calc(45% - 0.1em);
+    width:  calc(45% - 0.1em);
+    background-color: black;
+    border-radius: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+    .punto {
+        width:  calc(45% - 0.5em);
+        height: calc(45% - 0.5em);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .punto {
+        width:  calc(45% - 1em);
+        height: calc(45% - 1em);
+    }
+}
+
+.btn {
+    display: block;
+    padding: 1em 3em;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+.btn:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+    background-color: #f1c40f;
+}
